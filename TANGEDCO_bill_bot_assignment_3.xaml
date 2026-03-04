@@ -1,0 +1,366 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TANGEDCO_bill_bot_assignment_3" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,4664.8" sap2010:WorkflowViewState.IdRef="TANGEDCO_bill_bot_assignment_3_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="TANGEDCO_bill_bot_assignment_3" sap:VirtualizedContainerService.HintSize="720,4600" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_op" />
+      <Variable x:TypeArguments="x:String" Name="bill" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="657.6,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="240701292&#xA;LOHESH M&#xA;2024-2028&#xA;CSE" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_op]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="657.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="tneb_non_domestic_tariff.xlsx" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" DataTable="[dt_op]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="657.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1">
+      <ui:AddDataColumn.ColumnName>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">Bill</Literal>
+        </InArgument>
+      </ui:AddDataColumn.ColumnName>
+    </ui:AddDataColumn>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Browser Chrome: TNPDCL Online Payment" sap:VirtualizedContainerService.HintSize="657.6,3754.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="ba9f738f-29b1-491a-af9f-a7d574cf9064" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_op]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="624,3537.6" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590.4,3349.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="547.2,3260" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Tariff Check'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e16s1" DesignTimeRectangle="938, 448, 385, 20" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'DOMESTIC'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='calculator:tarifftype' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:tarifftype' type='' tag='SELECT' class='tariffjs' aaname='' /&gt;" Guid="57d00d4c-def9-450c-9fb2-c460b78c9fbe" InformativeScreenshot="883df60d210197325659a03c328b2983.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="541, 450, 78, 16" ElementType="Text" FriendlyName="'Tariff Check'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Tariff Check' check:innerText='Tariff Check' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NSelectItem DisplayName="Select Item 'Tariff Check'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="[CurrentRow(&quot;Tariff Type&quot;).ToString.Trim]" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="14">
+                          <x:String>DOMESTIC</x:String>
+                          <x:String>INDUSTRIES - METRO</x:String>
+                          <x:String>PUBL.LIGHT AND WATER SUPPL. - CORPORATION AND MUN</x:String>
+                          <x:String>PUBL.LIGHT AND WATER SUPPL. - VILLAGE PANCHAYAT</x:String>
+                          <x:String>COMMERCIAL</x:String>
+                          <x:String>DOMESTIC COMMON SUPPLY</x:String>
+                          <x:String>ACTUAL PLACES OF PUBLIC WORSHIP</x:String>
+                          <x:String>RAILWAY,PLANTATION WORKER,DEFENCE,POLICE-COLONIES</x:String>
+                          <x:String>COTTAGE AND TINY INDUSTRIES</x:String>
+                          <x:String>POWERLOOM</x:String>
+                          <x:String>TEMPORARY SUPPLY</x:String>
+                          <x:String>PUBL.LIGHT SUPPL-TOWN PANCHAYAT</x:String>
+                          <x:String>RECG-EDU-INSTN/INSTN-DECLARED BY GOVT.</x:String>
+                          <x:String>PRIVATE EDU.INSTITUTIONS AND HOSTELS</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e40s1" DesignTimeRectangle="938, 448, 385, 20" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'DOMESTIC'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='calculator:tarifftype' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:tarifftype' type='' tag='SELECT' class='tariffjs' aaname='' /&gt;" Guid="9a102a9f-8c7c-4cc8-af3f-8de670897b63" InformativeScreenshot="1d4e0bf27edb257209e62f4478e74a7c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="541, 450, 78, 16" ElementType="Text" FriendlyName="'Tariff Check'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" SearchSteps="FuzzySelector">
+                                <uix:Target.FuzzySelectorArgument>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Tariff Check' check:innerText='Tariff Check' /&gt;</Literal>
+                                  </InArgument>
+                                </uix:Target.FuzzySelectorArgument>
+                              </uix:Target>
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Billing cycle *'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e16s1" DesignTimeRectangle="938, 479, 94, 20" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Bi-monthly'" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl id='calculator:mode' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:mode' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="16ad5a6b-dc9b-49d1-8c3b-625197a786bc" InformativeScreenshot="a3d5c571b8cd7186a60bd286d50f8f13.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="541, 481, 87, 16" ElementType="Text" FriendlyName="'Billing cycle *'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Billing cycle *' check:innerText='Billing cycle *' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NSelectItem DisplayName="Select Item 'Billing cycle *'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="[CurrentRow(&quot;Billing Cycle&quot;).ToString.Trim]" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="2">
+                          <x:String>Bi-monthly</x:String>
+                          <x:String>Monthly</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e2s1" DesignTimeRectangle="938, 479, 94, 20" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Bi-monthly'" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl id='calculator:mode' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:mode' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="12cd788f-506f-4b2a-8b48-527450d58070" InformativeScreenshot="569a53bc697ec21ec279742959a04516.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="541, 481, 87, 16" ElementType="Text" FriendlyName="'Billing cycle *'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Billing cycle *' check:innerText='Billing cycle *' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <If Condition="[CurrentRow(&quot;Tariff Type&quot;).ToString.Trim.ToUpper &lt;&gt; &quot;DOMESTIC&quot;]" sap:VirtualizedContainerService.HintSize="484.8,1008" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,824.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contracted load(Not'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Text="[CurrentRow(&quot;Contracted Load (kW)&quot;).ToString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e4s1" DesignTimeRectangle="938, 510, 170, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT calculator:load1'" FullSelectorArgument="&lt;webctrl id='calculator:load4' tableRow='5' tag='TABLE' /&gt;&lt;webctrl id='calculator:load1' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:load4' tag='TABLE' /&gt;&lt;webctrl id='calculator:load1' type='text' tag='INPUT' class='ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all loadjs' aaname='' /&gt;" Guid="fc463cef-8a97-40a1-9b22-b1964e7f520c" InformativeScreenshot="931ffd9aa4b671f64b8a170b0684190d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="541, 516, 324, 16" ElementType="Text" FriendlyName="'Contracted load(Not'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl id='calculator:load' tableRow='5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl id='calculator:load' type='' tag='SPAN' class='' aaname='Contracted load(Not required for &amp;apos;Domestic tariff&amp;apos;)' check:innerText='Contracted load(Not required for &amp;apos;Domestic tariff&amp;apos;)' /&gt;" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'KVAH(Not required'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Text="[CurrentRow(&quot;KVAH&quot;).ToString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e4s1" DesignTimeRectangle="938, 588, 170, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT calculator:load3'" FullSelectorArgument="&lt;webctrl tableRow='9' tag='TABLE' /&gt;&lt;webctrl id='calculator:load3' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:load3' type='text' tag='INPUT' class='ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all' aaname='' /&gt;" Guid="a5e2b644-ea60-4f24-9700-543a90ca3896" InformativeScreenshot="2169745737e31866122f550bd070bc39.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="541, 594, 256, 16" ElementType="Text" FriendlyName="'KVAH(Not required'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl id='calculator:load2' tableRow='9' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl id='calculator:load2' type='' tag='SPAN' class='' aaname='KVAH(Not required for &amp;apos;Domestic tariff&amp;apos;)' check:innerText='KVAH(Not required for &amp;apos;Domestic tariff&amp;apos;)' /&gt;" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'MD Reached'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Text="[CurrentRow(&quot;MD Reached (kW)&quot;).ToString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e4s1" DesignTimeRectangle="938, 627, 170, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT calculator:md1'" FullSelectorArgument="&lt;webctrl tableRow='11' tag='TABLE' /&gt;&lt;webctrl id='calculator:md1' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:md1' type='text' tag='INPUT' class='ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all' aaname='' /&gt;" Guid="8fd32511-6adf-4da4-add0-e295a3464642" InformativeScreenshot="27030e2f15cca335164a2cca888d94f2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="541, 633, 304, 16" ElementType="Text" FriendlyName="'MD Reached'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl id='calculator:md' tableRow='11' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl id='calculator:md' type='' tag='SPAN' class='' aaname='MD Reached (Not required for &amp;apos;Domestic tariff&amp;apos;)' check:innerText='MD Reached (Not required for &amp;apos;Domestic tariff&amp;apos;)' /&gt;" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_21" />
+                      </If.Else>
+                    </If>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Consumed Units'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Text="[CurrentRow(&quot;Consumed Units&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e15s1" DesignTimeRectangle="938, 549, 170, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT calculator:unit'" FullSelectorArgument="&lt;webctrl tableRow='7' tag='TABLE' /&gt;&lt;webctrl id='calculator:unit' tableRow='1' tag='INPUT' /&gt;" FuzzyAccuracy="0.7" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:unit' type='text' tag='INPUT' class='ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all' aaname='' /&gt;" Guid="7fb9ad5b-49b4-4e5f-8bfd-2444f9082c66" ImageBase64="" InformativeScreenshot="7ca2a3a93f934eacf40e85ef023c884b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="541, 555, 108, 16" ElementType="Text" FriendlyName="'Consumed Units'" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='SPAN' /&gt;" FuzzyAccuracy="0.69" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Consumed Units:' check:innerText='Consumed Units:' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Calculate'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e40s1" DesignTimeRectangle="951, 696, 87, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Calculate'" FullSelectorArgument="&lt;webctrl idx='2' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-button-text' aaname='Calculate' check:innerText='Calculate' /&gt;" Guid="47d58626-6c95-4632-95d0-cb76666d0af9" InformativeScreenshot="ae38831f3805f87ad9a91b735fe0fb89.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                              <uix:Target DesignTimeRectangle="950, 695, 89, 32" ElementType="Button" FriendlyName="'Calculate'" FullSelectorArgument="&lt;webctrl idx='2' tableRow='4' tag='TABLE' /&gt;&lt;webctrl id='calculator:tt1' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:tt1' type='submit' tag='BUTTON' class='ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' aaname='Calculate' check:innerText='Calculate' /&gt;" SearchSteps="FuzzySelector" />
+                              <uix:Target DesignTimeRectangle="604, 743, 334, 16" ElementType="Text" FriendlyName="'* Choose'" FullSelectorArgument="&lt;webctrl class='tForm' idx='2' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='tForm' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='* Choose Monthly if Billing cycle is less than 35 days' check:innerText='* Choose Monthly if Billing cycle is less than 35 days' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Net Amount Rs.'" sap:VirtualizedContainerService.HintSize="484.8,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" TextString="[bill]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e3s2" DesignTimeRectangle="708, 936, 58, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'20625.0'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='20625.0' tableRow='24' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="d0b8a1bc-7504-4714-a939-4627d7f5611d" InformativeScreenshot="0b3fd1a7227432bfc4ad84c9bbcfb455.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="509, 936, 108, 17" ElementType="Text" FriendlyName="'Net Amount Rs.'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='24' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Net Amount Rs.' check:innerText='Net Amount Rs.' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="484.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Bill")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[bill]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'tnebnet.org/awp/tariffM…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="HardwareEvents" ScopeIdentifier="ba9f738f-29b1-491a-af9f-a7d574cf9064" Text="[&quot;[d(ctrl)]a[u(ctrl)][k(back)]&quot; + &quot;tnebnet.org/awp/tariffMaster&quot; + &quot;[k(enter)]&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="205, 73, 1267, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'tnebnet.org/awp/tariffM…'" FullSelectorArgument="&lt;ctrl name='TNPDCL Online Payment - Google Chrome – LOHESH  M (rajalakshmi.e*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='TNPDCL Online Payment - Google Chrome – LOHESH  M (rajalakshmi.e*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="48dadb33-43b5-4198-8a33-74fc8993c02c" InformativeScreenshot="837d43517ea35b15af664d8750677e43.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TNPDCL Online Payment - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="105, 67, 43, 43" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='TNPDCL Online Payment - Google Chrome – LOHESH  M (rajalakshmi.e*' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='TNPDCL Online Payment - Google Chrome – LOHESH  M (rajalakshmi.e*' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,276" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,197.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00.0600000" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[CurrentRow(0).ToString]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                  </Sequence>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="0fe36af352730b41270ad7ebb6b3c356.jpg" Selector="&lt;html app='chrome.exe' title='TNPDCL Online Payment' /&gt;" Title="assignment - File Explorer" Url="https://www.tnebnet.org/awp/tariffMaster" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_op]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="657.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet2" WorkbookPath="tneb_non_domestic_tariff.xlsx" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="657.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Done&quot;]" />
+  </Sequence>
+</Activity>
